@@ -10,8 +10,9 @@
     --bg-alt: #f0f0f0;
     --text: #1a1a1a;
     --text-muted: #6b6b6b;
-    --accent: #1a1a2e;
-    --accent-hover: #2d2d4e;
+    --accent: #1e40af;
+    --accent-hover: #1d4ed8;
+    --accent-gold: #b8860b;
     --border: #e0e0e0;
     --card-bg: #ffffff;
     --radius: 12px;
@@ -62,8 +63,8 @@ body {
 
 .hero-title {
     font-size: 1.25rem;
-    font-weight: 400;
-    color: var(--text-muted);
+    font-weight: 500;
+    color: var(--accent);
     margin-bottom: 24px;
 }
 
@@ -139,6 +140,16 @@ body {
     text-align: center;
 }
 
+.section-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--accent);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
 /* Cards */
 .cards {
     display: grid;
@@ -157,11 +168,13 @@ body {
 .card:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    border-color: var(--accent);
 }
 
 .card-icon {
     font-size: 1.75rem;
     margin-bottom: 16px;
+    color: var(--accent);
 }
 
 .card h3 {
@@ -197,7 +210,7 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: var(--text-muted);
+    color: var(--accent);
     margin-bottom: 6px;
 }
 
@@ -223,7 +236,7 @@ body {
 }
 
 .personal-text strong {
-    color: var(--text);
+    color: #1a5632;
 }
 
 /* Footer */
